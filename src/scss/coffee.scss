@@ -37,12 +37,7 @@ html {
         font-size: 0.8rem;
     }
 
-    &__taste, &__ingredients, &__taste, &__quejina {
-        margin: .7rem .7rem;
-        font-weight: 400;
-        font-size: .7rem;
-        // padding: 1rem;
-    }
+
 
     &__quejina {
         font-weight: 700;;
@@ -78,10 +73,11 @@ html {
 
     &__type {
         border-radius: 5px;
+        
     
         margin-bottom: 3vh;
         background-color: rgb(214, 211, 211);
-        width: 34%;
+        width: 34vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -95,6 +91,16 @@ html {
             width: 90vw;
             
         }
+
+        
+    }
+
+    &__taste, &__ingredients, &__quejina {
+        margin: .7rem .7rem;
+        font-weight: 400;
+        font-size: .7rem;
+        
+        // padding: 1rem;
     }
 
 
