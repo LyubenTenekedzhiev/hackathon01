@@ -8,3 +8,24 @@
 html {
     box-sizing: border-box;
 }
+
+.main {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: rgb(238, 153, 153);
+
+    img {
+        height: 60%;
+        width: 60%;
+    }
+
+    &__option {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+
+        p {
+
+        }
+    }
+}
