@@ -2,6 +2,7 @@
 @import 'menu.scss';
 @import 'footer.scss';
 
+
 * {
     margin: 0;
     padding: 0;
@@ -9,5 +10,102 @@
 
 html {
     box-sizing: border-box;
+    font-family: "Lato";
 }
 
+.main {
+    width: 70vw;
+    margin: 0 auto;
+
+
+    h1 {
+        font-weight: 400;
+        padding: 1.1rem 0;
+    }
+
+    h2 {
+        font-weight: 300;
+        padding-bottom: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    img {
+        height: 70%;
+        width: 80%;
+
+        @media(max-width: 560px) {
+            width: 100%;
+        }
+    }
+
+
+    &__option {
+        display: flex;
+        flex-direction: column;
+        width: 72.5%;
+        justify-content: space-around;
+        margin: 1rem 0;
+
+        p {
+            font-weight: 400;
+            text-transform: uppercase;
+
+            @media(max-width: 861px) {
+                font-size: 1.7vw;   
+            }
+
+            @media(max-width: 350px) {
+                font-size: 2vw;
+            }  
+        }
+    }
+
+    &__info {
+        width: 80%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p:last-of-type {
+            // margin-top: 1rem;
+            font-weight: 300;
+
+            @media(max-width: 861px) {
+                font-size: 1.5vw;   
+            }
+
+            @media(max-width: 350px) {
+                font-size: 2vw;
+             }
+        }
+
+        @media(max-width: 861px) {
+            width: 90%;
+         }
+
+         @media(max-width: 350px) {
+           flex-direction: column;    
+           justify-content: center;
+           height: 25vh;
+
+        }
+
+    }
+
+    #map {
+        width: 56vw;
+        height: 60vh;
+        margin-top: 1.6rem;
+        margin-bottom: -2rem;
+
+        @media(max-width: 560px) {
+            width: 70vw;
+            height: 50vh;
+        }
+
+        @media(max-width: 350px) {
+            height: 35vh;
+        }
+    }
+}
