@@ -10,14 +10,16 @@ html {
 
 .coffee {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: .8rem;
     width: 70vw;
     margin: 0 auto;
 
     @media (max-width:600px) {
         width: 90vw;
+    }
 
-        
+    &__title {
+        font-size: 1.5vw;
     }
     
 
@@ -31,21 +33,18 @@ html {
 
     &__text, &__text2 {
         font-weight: 300;
+        font-size: 1.3vw;
     }
-
-    &__text2, &__ingredients, &__taste, &__quejina {
-        font-size: 0.8rem;
-    }
-
+    
     &__taste, &__ingredients, &__taste, &__quejina {
         margin: .7rem .7rem;
         font-weight: 400;
-        font-size: .7rem;
-        // padding: 1rem;
+        font-size: 1rem;
     }
 
     &__quejina {
         font-weight: 700;;
+        font-size: 1.3vw;
     }
 
     &__image {
@@ -81,7 +80,7 @@ html {
     
         margin-bottom: 3vh;
         background-color: rgb(214, 211, 211);
-        width: 34%;
+        width: 34vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
