@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    height: 25vh;
+    font-size: 0.8rem;
+    background-color: rgb(38, 35, 65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__navigation {
+        a {
+            color: rgb(63, 116, 177);
+        }
+        a:not(:last-of-type) {
+            margin-right: 2.0rem;
+        }
+    }
+
+    div {
+        height: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        p a {
+            color: rgb(63, 116, 177);
+        }
+    }
+}
