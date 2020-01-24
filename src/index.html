@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <title>Hipster Coffee</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -23,15 +25,56 @@
         <h2>Specialty coffee, fresh food & local community.</h2>
         <img src="./img/counter.jpg" alt="coffee counter">
 
-        <div class="main__option">
-            <p>Opening hours</p>
-            <p>Book a table</p>
-            <p>Adress</p>
-        </div>
         <div class="main__info">
-            <p>sunday - thursday: 8:00 - 23:00 <br> friday - saturday: 8:00 - 1:00</p>
-            <p>Call +1 415-321-4567</p>
+            <div class="main__option">
+                <p>Opening hours</p>
+                <p>sunday - thursday: 8:00 - 23:00 <br> friday - saturday: 8:00 - 1:00</p>
+            </div>
+            <div class="main__option">
+                <p>Book a table</p>
+                <p>Call +1 415-321-4567</p>
+            </div>
+            <div class="main__option">
+                <p>Adress</p>
+                <p>321 Ivy St. <br> San Francisco, CA 94102</p>
+            </div>
         </div>
+
+        <div id="map"></div>
     </main>
+
+    <footer class="footer">
+
+        <nav class="footer__navigation">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Coffee</a>
+            <a href="#">Our Story</a>
+        </nav>
+
+        <div>
+
+        <h3 class="footer__hashtag">#HIPSTERMAKECOFFEE</h3>
+
+        <p class="footer__social-media">Follow us on <a href="#">Twitter</a> and <a href="#">Instagram</a></p>
+
+        </div>
+    </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmd1BJ_VWsFQViUkHWpECsYtHrCXYVJNY&callback=initMap">
+      </script>
 </body>
 </html>
