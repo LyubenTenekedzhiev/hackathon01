@@ -8,22 +8,24 @@
     <title>Hipster Coffee</title>
     <link rel="stylesheet" href="/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <img class="header__logo" src="./img/logo.svg">
         <nav class="header__nav">
-            <a href="/index.html">Home</a>
-            <a href="/menu.html">Menu</a>
-            <a href="/coffee.html">Coffee</a>
-            <a href="#">Our Store</a>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="coffee.html">Coffee</a>
+            <a href="https://www.amazon.de/">Our Store</a>
         </nav>
     </header>
 
     <main class="main">
         <h1>GENERIC HIPSTER COFFEE</h1>
         <h2>Specialty coffee, fresh food & local community.</h2>
-        <img src="./img/counter.jpg" alt="coffee counter">
+        
+        <img src="./img/counter.jpg" alt="coffee counter" data-aos="fade-right">
 
         <div class="main__info">
             <div class="main__option">
@@ -40,7 +42,7 @@
             </div>
         </div>
 
-        <div id="map"></div>
+        <div id="map" data-aos="fade-right"></div>
     </main>
 
     <footer class="footer">
@@ -49,7 +51,7 @@
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="coffee.html">Coffee</a>
-            <a href="#">Our Store</a>
+            <a href="https://www.amazon.de/">Our Store</a>
         </nav>
 
         <div>
@@ -76,5 +78,9 @@
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmd1BJ_VWsFQViUkHWpECsYtHrCXYVJNY&callback=initMap">
       </script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+              AOS.init();
+        </script>
 </body>
 </html>
