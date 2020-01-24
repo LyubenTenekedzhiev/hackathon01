@@ -1,0 +1,25 @@
+.header {
+    background-color: rgb(228, 222, 222);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+
+    &__logo {
+        height: 5.7rem;
+    }
+
+    &__nav {
+        font-size: 1.3vw;
+
+        a {
+            text-decoration: none;
+            margin-left: 4rem;
+            color: grey;
+        }
+
+        a:hover {
+            color: black;
+        }
+    }
+}
