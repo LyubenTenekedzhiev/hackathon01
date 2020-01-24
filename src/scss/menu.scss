@@ -1,0 +1,74 @@
+.menu {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 1.5em;
+
+    .menu-container {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:whitesmoke;
+        padding: 2rem;
+
+        @media(max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 2.5rem;
+            
+        }
+
+        // h2:last-of-type {
+            
+        //     @media(max-width: 600px) {
+        //         font-size: 2.2rem;
+        //     }
+        //     @media(max-width: 550px) {
+        //         font-size: 1.9rem;
+        //     }
+        //     @media(max-width: 445px) {
+        //         font-size: 1.6rem;
+        //     }
+        // }
+
+        .element-container1, .element-container2, .element-container3, .element-container4, .element-container5, .element-container6 {
+            width: 26vw;
+            padding: 2em 0 4em;
+
+
+            .coffeespecialites {
+                padding-top: 2.48em;
+            }
+
+            h3 {
+                font-size: 150%;
+                padding: 0.7em 0;
+            }
+
+            span {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0.7em 0;
+                font-family: 'Nanum Myeongjo', serif;
+
+                @media(max-width: 550px) {
+                    width: 240%;
+                }
+            }   
+
+        
+        }        
+    }
+
+    img {
+        width: 70%;
+        padding-left: 15%;
+    }
+}
