@@ -13,8 +13,9 @@
         padding: 2rem;
 
         @media(max-width: 550px) {
-            display: flex;
+            
             flex-direction: column;
+            width: 100%;
             
         }
 
@@ -24,18 +25,6 @@
             
         }
 
-        // h2:last-of-type {
-            
-        //     @media(max-width: 600px) {
-        //         font-size: 2.2rem;
-        //     }
-        //     @media(max-width: 550px) {
-        //         font-size: 1.9rem;
-        //     }
-        //     @media(max-width: 445px) {
-        //         font-size: 1.6rem;
-        //     }
-        // }
 
         .element-container1, .element-container2, .element-container3, .element-container4, .element-container5, .element-container6 {
             width: 26vw;
@@ -68,7 +57,14 @@
     }
 
     img {
-        width: 70%;
-        padding-left: 15%;
+        width: 75%;
+        padding-left: 23%;
+        margin-bottom: -3.5rem;
+
+        @media(max-width: 550px) {
+            width: 100%;
+            margin-bottom: -3.5rem 0 -1rem;
+            padding: 0;
+        }
     }
 }
