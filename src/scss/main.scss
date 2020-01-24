@@ -3,12 +3,32 @@
 @import 'coffee.scss';
 @import 'menu.scss';
 
+//CURSOR
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+  }
 
-
+  @keyframes cursorAnim {
+      from {
+          transform: scale(1.1);
+      }
+      to {
+          transform: scale(.7);
+      }
+  }
 
 * {
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 html {

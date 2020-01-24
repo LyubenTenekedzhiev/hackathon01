@@ -14,6 +14,8 @@
 
 </head>
 <body>
+    <div class="cursor"></div>
+
     <header class="header">
         <img class="header__logo" src="./img/logo.svg">
         <nav class="header__nav">
@@ -128,5 +130,12 @@
     <script>
         AOS.init();
       </script>
+      <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+        cursor.setAttribute('style', 'top: ' + (e.pageY - 15) +'px; left: ' + (e.pageX - 15) +'px')
+        });
+    </script>
 </body>
 </html>
