@@ -1,6 +1,9 @@
 @import 'header.scss';
 @import 'footer.scss';
 @import 'coffee.scss';
+@import 'menu.scss';
+
+
 
 * {
     margin: 0;
@@ -15,11 +18,7 @@ html {
 .main {
     width: 70vw;
     margin: 0 auto;
-    // background-color: rgb(238, 153, 153);
 
-    // @media(max-width: 625px) {
-    //     width: 80vw;
-    // }
 
     h1 {
         font-weight: 400;
@@ -29,7 +28,7 @@ html {
     h2 {
         font-weight: 300;
         padding-bottom: 1.3rem;
-        text-transform: uppercase;;
+        text-transform: uppercase;
     }
 
     img {
@@ -41,10 +40,6 @@ html {
         }
     }
 
-    // img:last-of-type {
-    //     margin-top: 2rem;
-    //     margin-bottom: -2rem;
-    // }
 
     &__option {
         display: flex;
